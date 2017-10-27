@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--The toolbar-->
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="48.5dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:minHeight="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                >
+
+            </android.support.v7.widget.Toolbar>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="180826_3일"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="57dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nextday"
+                android:text="메인 화면"
+                android:textSize="16sp"
+                android:textColor="@color/skyblue"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <!--출발/도착 맨 첫 레이아웃-->
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@+id/toolbar_layout"
+            android:background="@color/vroute"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+                <LinearLayout
+                    android:id="@+id/layout1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="출발"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="하라주쿠 역"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_below="@+id/layout1_1"
+                    android:layout_marginTop="18dp"
+                    android:text="도착"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+                <LinearLayout
+                    android:id="@+id/layout1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/layout1_1"
+                    android:layout_toRightOf="@+id/textView3"
+                    >
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text=" : "
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="고엔지 역"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/map_icon_white"
+                />
+        </RelativeLayout>
+
+        //조지는 레이아웃
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="20.5dp"
+                android:layout_height="563dp"
+                android:background="@drawable/line_f"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="72.4dp"
+                android:id="@+id/imageView2" />
+
+            <ImageButton
+                android:id="@+id/play1"
+                android:layout_width="41dp"
+                android:layout_height="38dp"
+                android:background="@drawable/vroute_play"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="38dp"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/play2"
+                android:layout_width="41dp"
+                android:layout_height="38dp"
+                android:background="@drawable/vroute_play"
+                android:layout_marginTop="235dp"
+                android:layout_below="@+id/play1"
+                android:layout_alignLeft="@+id/play1"
+                android:layout_alignStart="@+id/play1" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="하라주쿠 역"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/imageView2"
+                />
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="142dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="69.5dp"
+                android:text="JR 야마노테 선"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_jr_yamanote"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_below="@+id/txt1"
+                android:layout_alignLeft="@+id/txt1"
+                android:layout_alignStart="@+id/txt1" />
+
+            <TextView
+                android:id="@+id/line_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신주쿠"
+                android:textSize="13.5dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/txt1"
+                android:layout_toRightOf="@+id/btn_1"
+                android:layout_marginTop="71dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/arr2"
+                android:layout_width="22dp"
+                android:layout_height="10dp"
+                android:background="@drawable/arr"
+                android:layout_marginTop="77dp"
+                android:layout_below="@+id/btn_1"
+                android:layout_alignLeft="@+id/btn_1"
+                android:layout_alignStart="@+id/btn_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/arr2"
+                android:layout_below="@+id/btn_1"
+                android:layout_marginTop="72.5dp"
+                android:layout_marginLeft="12dp"
+                android:text="2분 (직항) 플랫폼 2"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신주쿠 역"
+                android:layout_marginTop="68.1dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/arr2"
+                android:layout_alignLeft="@+id/txt1"
+                android:layout_alignStart="@+id/txt1" />
+
+            <ImageView
+                android:id="@+id/arr3"
+                android:layout_width="22dp"
+                android:layout_height="10dp"
+                android:background="@drawable/arr"
+                android:layout_below="@+id/txt2"
+                android:layout_marginTop="29dp"
+                android:layout_alignLeft="@+id/txt1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/arr2"
+                android:layout_below="@+id/txt2"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="12dp"
+                android:text="도보 약 1분"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="142dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="29.2dp"
+                android:text="JR 주오 소부센 가쿠테 선"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_juo_sobusen"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_below="@+id/arr3"
+                android:layout_alignLeft="@+id/txt1"
+                android:layout_alignStart="@+id/txt1" />
+
+            <TextView
+                android:id="@+id/line_right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="미타카"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/arr3"
+                android:layout_toRightOf="@+id/btn_2"
+                android:layout_marginTop="29.3dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/arr4"
+                android:layout_width="22dp"
+                android:layout_height="10dp"
+                android:background="@drawable/arr"
+                android:layout_marginTop="77dp"
+                android:layout_below="@+id/btn_2"
+                android:layout_alignLeft="@+id/btn_1"
+                android:layout_alignStart="@+id/btn_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/arr4"
+                android:layout_below="@+id/btn_2"
+                android:layout_marginTop="72.5dp"
+                android:layout_marginLeft="12dp"
+                android:text="10분 (정류장 4개)"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고엔지 역"
+                android:layout_marginTop="69dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/arr4"
+                android:layout_alignLeft="@+id/txt1"
+                android:layout_alignStart="@+id/txt1" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

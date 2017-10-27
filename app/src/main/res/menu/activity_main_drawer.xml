@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/people"
+            android:title="@string/main_page" />
+        <item
+            android:id="@+id/nav_vroute"
+            android:icon="@drawable/core"
+            android:title="@string/v_route" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/friends"
+            android:title="@string/schedule_share" />
+        <item
+            android:id="@+id/nav_airplain"
+            android:icon="@drawable/message"
+            android:title="@string/airplane_question" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_top2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting"
+            android:title="@string/setting" />
+
+        <!--</group>-->
+    </group>
+</menu>

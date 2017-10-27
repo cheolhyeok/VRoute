@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/layout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar_layout"
+    android:layout_marginTop="10dp"
+    >
+
+    <TextView
+        android:id="@+id/daeryuck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일본"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_marginRight="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <ImageButton
+        android:id="@+id/dd"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/main_5"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="98dp"
+        />
+    <TextView
+        android:id="@+id/gukga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="도쿄"
+        android:textSize="15sp"
+        android:gravity="right"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <ImageButton
+        android:id="@+id/ee"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/main_5"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="28dp"
+        />
+</RelativeLayout>
+
+<View
+android:id="@+id/section_line1"
+android:layout_below="@+id/layout2"
+android:layout_width="match_parent"
+android:layout_height="0.5dip"
+android:background="@color/gray"
+android:layout_marginTop="10dp"
+android:layout_marginLeft="5dp"
+android:layout_marginRight="5dp"
+    >
+</View>
+<ImageView
+android:id="@+id/map"
+android:layout_below="@+id/section_line1"
+android:layout_width="wrap_content"
+android:layout_height="200dp"
+android:scaleType="centerCrop"
+android:layout_marginTop="5dp"
+android:src="@drawable/map"
+    />
+<View
+android:id="@+id/section_line2"
+android:layout_below="@+id/map"
+android:layout_width="match_parent"
+android:layout_height="0.5dip"
+android:background="@color/gray"
+android:layout_marginTop="5dp"
+android:layout_marginLeft="5dp"
+android:layout_marginRight="5dp"
+    >
+</View>
+
+<RelativeLayout
+android:id="@+id/layout3"
+android:layout_below="@+id/section_line2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:layout_marginBottom="10dp"  >
+
+<TextView
+    android:id="@+id/txt1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="올해의 추천 여행"
+    android:textStyle="bold"
+    android:textSize="13sp"
+    android:layout_marginLeft="5dp"
+    android:layout_centerVertical="true"
+    />
+
+<TextView
+    android:id="@+id/tema"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="테마"
+    android:gravity="right"
+    android:textSize="15sp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="130dp"
+    />
+
+<TextView
+    android:id="@+id/festval"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="축제"
+    android:gravity="right"
+    android:textSize="15sp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="60dp"
+    />
+
+<ImageButton
+    android:id="@+id/ff"
+    android:layout_width="8dp"
+    android:layout_height="8dp"
+    android:background="@drawable/main_5"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="28dp"
+    />
+</RelativeLayout>
+
+
+
+    </RelativeLayout>

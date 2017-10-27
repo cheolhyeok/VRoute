@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kwon.cheolhyeok.vroute2">
+
+    <uses-permission android:name="com.mapv2.demo.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCcr8LhL-fsKyumMMA5saXfWvv2y-ntyaA"/>
+
+        <activity
+            android:name=".Intro_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".WelcomeActivity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+
+    <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:screenOrientation="portrait"
+        >
+    </activity>
+
+        <activity
+            android:name=".MainChoiceActivity.a_CountrychoiceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".MainChoiceActivity.b_CalendarchoiceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".MainChoiceActivity.c_AirlinechoiceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".FestivalActivity_10.festival_1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".FestivalActivity_10.festival_2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".FestivalActivity_10.festival_3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".FestivalActivity_10.festival_4"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".FestivalActivity_10.festival_5"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".FestivalActivity_10.festival_6"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".FestivalActivity_10.festival_7"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".FestivalActivity_10.festival_8"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".FestivalActivity_10.festival_9"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".FestivalActivity_10.festival_10"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".nav_Vroute_360.day_1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".nav_Vroute_360.day_1_1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".nav_Vroute_360.day_2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".nav_Vroute_360.day_2_1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".nav_Vroute_360.day_2_2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".nav_Vroute_360.day_3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".nav_Vroute_360.day_3_1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".GoogleMapActivity.Search_Route_1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+
+            >
+        </activity>
+
+        <activity
+            android:name=".GoogleMapActivity.Search_Route_2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+        <activity
+            android:name=".GoogleMapActivity.Search_Route_3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+
+    </application>
+
+</manifest>

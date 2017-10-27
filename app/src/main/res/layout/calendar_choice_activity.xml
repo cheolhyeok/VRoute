@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:sc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- The toolbar -->
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/skyblue"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:background="@color/white"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+
+        <!--tools:text="yyyy-mm-dd"-->
+    <TextView
+        android:id="@+id/tvMonthTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2018 / 08"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/skyblue"/>
+
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_below="@+id/tvMonthTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/calendar_sunday_start"/>
+
+        </RelativeLayout>
+
+        <com.tubb.calendarselector.library.MonthView
+            android:id="@+id/ssMv"
+            android:layout_below="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            sc:sc_draw_monthday_only="false"
+            sc:sc_month="2018-8"
+            />
+
+        <View
+            android:id="@+id/section_line1"
+            android:layout_below="@+id/ssMv"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/gray"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_below="@+id/section_line1"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018.08.24"
+                android:textSize="18sp"
+                android:textColor="@color/gray70"
+                android:layout_toLeftOf="@+id/txt3"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="~"
+                android:textColor="@color/gray70"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                />
+
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018.08.26"
+                android:textSize="18sp"
+                android:textColor="@color/gray70"
+                android:layout_toRightOf="@+id/txt3"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_below="@+id/layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="2박 3일"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

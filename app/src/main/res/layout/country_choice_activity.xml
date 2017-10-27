@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The toolbar -->
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+        </android.support.v7.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="국가 검색"
+            android:textColorHint="@color/gray40"
+            android:maxLines="1"
+            android:maxLength="13"
+            android:gravity="right"
+            android:focusable="true"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"
+            android:layout_marginRight="100dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="71dp"
+            />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/skyblue"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/a_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout">
+    </ListView>
+
+
+</RelativeLayout>

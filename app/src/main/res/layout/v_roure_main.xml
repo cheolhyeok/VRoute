@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="kwon.cheolhyeok.vroute2.MainActivity">
+
+    <AdapterViewFlipper
+        android:id="@+id/simpleAdapterViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </AdapterViewFlipper>
+
+    <RelativeLayout
+        android:id="@+id/menu_choice_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simpleAdapterViewFlipper"
+        android:layout_marginTop="51dp"
+        android:clickable="true"
+        >
+
+        <ImageButton
+            android:id="@+id/icon1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/main_1"
+            android:layout_marginLeft="14dp"
+            />
+
+        <TextView
+            android:id="@+id/choice_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="국가 선택"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/gray70"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon1"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:id="@+id/choice_1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일본"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/choice_1"
+            android:layout_marginLeft="100.5dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/section_line1"
+        android:layout_below="@+id/menu_choice_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gray"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="58.5dp"
+        android:layout_marginRight="13.5dp"
+        >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/menu_choice_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_choice_1"
+        android:layout_marginTop="54dp"
+        android:clickable="true"
+
+        >
+
+        <ImageButton
+            android:id="@+id/icon2"
+            android:layout_width="26.5dp"
+            android:layout_height="26.5dp"
+            android:background="@drawable/main_2"
+            android:layout_marginLeft="14dp"
+            />
+
+        <TextView
+            android:id="@+id/choice_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일정 선택"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/gray70"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon2"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:id="@+id/choice_2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018.08.24 ~ 2018.08.26"
+            android:textSize="17.3sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/choice_2"
+            android:layout_marginLeft="30dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/section_line2"
+        android:layout_below="@+id/menu_choice_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gray"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="58.5dp"
+        android:layout_marginRight="13.5dp"
+        >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/menu_choice_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_choice_2"
+        android:layout_marginTop="54dp"
+        android:clickable="true"
+        >
+
+        <ImageButton
+            android:id="@+id/icon3"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:background="@drawable/main_3"
+            android:layout_marginLeft="14dp"
+            />
+
+        <TextView
+            android:id="@+id/choice_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="항공권 선택"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/gray70"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon3"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/inc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서울 인천"
+            android:textSize="17.3sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/choice_3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            />
+
+
+
+        <ImageButton
+            android:id="@+id/inc3"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/main_4"
+            android:layout_toRightOf="@id/inc1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/nar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도쿄 나리타"
+            android:textColor="@color/black"
+            android:textSize="17.3sp"
+            android:layout_toRightOf="@+id/inc3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/section_line3"
+        android:layout_below="@+id/menu_choice_3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gray"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="58.5dp"
+        android:layout_marginRight="13.5dp"
+        >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/menu_choice_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp">
+
+    <TextView
+        android:id="@+id/inc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:55"
+        android:textSize="11sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="149dp"
+        />
+
+        <TextView
+            android:id="@+id/nar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30"
+            android:textSize="11sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="56dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/search_route"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-5dip"
+        android:layout_marginRight="-5dip"
+        android:background="@color/skyblue"
+        android:text="루트 검색"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>
